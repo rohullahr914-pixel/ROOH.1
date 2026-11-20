@@ -1,0 +1,20 @@
+{
+  "name": "rooh-ai",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/whatsapp-bridge"
+  ],
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "npm run dev -w @rooh/web",
+    "dev:api": "python -m uvicorn app.main:app --reload --port 8000 --app-dir apps/api",
+    "build": "npm run build -w @rooh/web",
+    "lint": "npm run lint -w @rooh/web",
+    "test": "npm run test -w @rooh/web",
+    "dev:whatsapp": "npm run dev -w @rooh/whatsapp-bridge"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}

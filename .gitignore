@@ -1,0 +1,39 @@
+node_modules
+apps/web/public/mediapipe/hand_landmarker.*
+.next
+.env
+.env.local
+!.env.example
+__pycache__
+.pytest_cache
+.venv
+*.pyc
+*.tsbuildinfo
+coverage
+dist
+.stale-install
+
+.next-verify
+
+# Personal WhatsApp credentials, QR data, sessions and send journal
+.rooh-private/
+**/.rooh-private/
+**/.wwebjs_auth/
+**/.wwebjs_cache/
+
+# Next.js generated caches
+.next*/
+
+# Local secrets and environment overrides
+.env.*
+!.env.example
+.envrc
+
+# Downloaded reference projects (not runtime dependencies)
+/visual-references/
+/Particle-face-webgl-main/
+
+# Incomplete downloads and local logs
+*.download
+*.log
+*.tmp
